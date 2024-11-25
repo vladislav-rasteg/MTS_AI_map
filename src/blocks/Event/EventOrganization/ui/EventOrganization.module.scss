@@ -1,0 +1,235 @@
+/* Start of Selection */
+.block_wrapper {
+    width: 100%;
+    padding: 2rem var(--page-padding-1280) 6rem var(--page-padding-1280);
+}
+
+.block {
+    width: 100%;
+    background: var(--bg-island);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    border-radius: 6rem;
+}
+
+.map_organizer {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    height: 44rem;
+}
+
+.map_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 6rem;
+    background: var(--bg-island);
+    width: 100%;
+    height: 100%;
+}
+
+.organizator_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 3rem 4.5rem;
+    border-radius: 6rem;
+    background: var(--bg-island);
+    width: 60%;
+    height: 100%; /* Изменено на auto для соответствия высоте первого блока */
+    max-width: 50rem;
+}
+
+.organizator_main_info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.icon_group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.map {
+    border-radius: 4.5rem;
+    overflow: hidden;
+}
+
+.heading_text {
+    font-weight: 500;
+}
+
+.organization_links{
+    display: flex;
+    gap: 1rem;
+}
+
+.social_media{
+    display: flex;
+    padding: 1.2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: var(--button-tetrinary-light);
+}
+
+.social_media_icon{
+    fill: var(--icon-primary);
+}
+
+.about_organization_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.about_organization{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+    cursor: pointer;
+}
+
+.organization_icon_wrapper{
+    display: flex;
+    transition: 300ms;
+
+    &.active{
+        transform: rotate(180deg);
+    }
+}
+
+
+.about_organization_content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.info_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+@media (max-width: 744px){
+    .block_wrapper {
+        width: 100%;
+        padding: 3rem var(--page-padding-744) 3rem var(--page-padding-744);
+    }
+    
+    .map_organizer {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .map_wrapper {
+        gap: 2rem;
+        padding: 0rem;
+        border-radius: 2rem;
+        background: none;
+        width: 100%;
+        height: 30rem;
+
+        & .icon_group{
+            padding-left: 0rem;
+        }
+    }
+    
+    .organizator_wrapper {
+        display: flex;
+        gap: 2rem;
+        padding: 1.6rem;
+        border-radius: 2rem;
+        background: var(--bg-island);
+        width: 100%;
+        height: 100%; /* Изменено на auto для соответствия высоте первого блока */
+        max-width: unset;
+    }
+    
+    .organizator_main_info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .icon_group {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .map {
+        border-radius: 2rem;
+        overflow: hidden;
+    }
+    
+    .heading_text {
+        font-weight: 500;
+    }
+    
+    .organization_links{
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .social_media{
+        display: flex;
+        padding: 1.2rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background: var(--bg-primary);
+    }
+    
+    .social_media_icon{
+        fill: var(--icon-primary);
+    }
+    
+    .about_organization_wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+    
+    .about_organization{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 0;
+        cursor: pointer;
+    }
+    
+    .organization_icon_wrapper{
+        display: flex;
+        transition: 300ms;
+    
+        &.active{
+            transform: rotate(180deg);
+        }
+    }
+    
+    
+    .about_organization_content{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .info_wrapper{
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+    
+}

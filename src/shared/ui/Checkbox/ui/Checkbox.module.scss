@@ -1,0 +1,44 @@
+.cl1{
+    position: absolute;
+    border-radius: 0.4rem;
+    background: #FFFFFF;
+}
+
+.cl2{
+    display: flex;
+    position: relative;
+}
+
+.cl3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem; 
+    height: 2.4rem;
+    border: 1px solid #888888;
+    border-radius: 0.6rem;
+}
+
+.error{
+    border: 1px solid #ff072c;
+}
+
+.cl4{
+    opacity: 0;
+}
+
+.cl5{
+    opacity: 0.5;
+}
+
+.cl6{
+    width: 100%;
+    height: 100%;
+    transition: all;
+}
+
+//     "hover:bg-indigo-200": !field.value && !isDisabled,
+//     "hover:bg-indigo-900": field.value && !isDisabled,
+//     "bg-indigo-700": field.value,
+//     "focus-within:ring-4 focus-within:ring-indigo-400":
+//       !isDisabled,

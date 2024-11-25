@@ -1,0 +1,54 @@
+.block{
+    padding: 4rem var(--page-padding-1280);
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.user_card{
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2.4rem;
+    background: var(--bg-island);
+    min-width: 40%;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+}
+
+.profile_image{
+    aspect-ratio: 1/1;
+    width: 12rem;
+}
+
+.column{
+ display: flex;
+ flex-direction: column;
+ gap: 0.8rem;
+}
+
+.full_row{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.label{
+    font-weight: 500;
+    width: 15rem;
+}
+
+@media (max-width: 744px){
+    .block{
+        padding: 1.2rem var(--page-padding-744) 3.2rem var(--page-padding-744);
+    }
+
+    .user_card{
+        width: 100%;
+    }
+}

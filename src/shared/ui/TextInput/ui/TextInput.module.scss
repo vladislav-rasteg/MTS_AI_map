@@ -1,0 +1,63 @@
+@import "shared/styles/variables.scss";
+
+.input{
+    padding: 1.6rem;
+    font-size: var(--input_font_size);
+    width: var(--input_default_width);
+    border: none;
+    border-radius: var(--default_border_radius);
+    background-color: transparent;
+    background: var(--input-bg-light);
+    box-shadow: var(--border-shadow);
+
+    &.on_color{
+        background: var(--input-on-color-bg);
+        color: var(--input-on-color-text);
+    }
+
+    &.fullWidth{
+        width: 100%;
+    }
+
+    &:active {
+        outline: 0;
+        outline-offset: 0;
+        box-shadow: var(--border-shadow-hover);
+    }
+
+    &:hover {
+        outline: 0;
+        outline-offset: 0;
+        box-shadow: var(--border-shadow-hover);
+    }
+
+    &:focus {
+        outline: 0;
+        outline-offset: 0;
+        box-shadow: var(--border-shadow-hover);
+        border: 1px solid var(--border-shadow-hover);
+    }
+
+    &.error{
+        border: 1px solid var(--error) !important;
+    }
+
+    &[type="date"] {
+        -webkit-appearance: none !important;
+        appearance: none !important;
+    }
+}
+
+.error{
+    font-size: 1.6rem;
+}
+
+
+.input_error_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: flex-start;
+    color: var(--error);
+}

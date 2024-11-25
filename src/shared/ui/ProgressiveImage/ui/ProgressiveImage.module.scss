@@ -1,0 +1,47 @@
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .image {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .placeholder {
+    position: relative;
+    z-index: 2;
+    filter: blur(20px);
+    transform: scale(1.1);
+    opacity: 1;          /* Placeholder видим сразу */
+  }
+  
+  .hidden {
+    opacity: 0;          /* Плавно скрываем placeholder */
+  }
+  
+  .mainImage.loaded {
+    z-index: 3;
+
+    &.cached{
+      animation: none;
+      opacity: 1; 
+      filter: blur(0px);
+    }
+  }
+  
+  .hide {
+    display: none !important;
+  }
+
+  .image_skeleton{
+    width: 100%;
+    height: 100%;
+  }

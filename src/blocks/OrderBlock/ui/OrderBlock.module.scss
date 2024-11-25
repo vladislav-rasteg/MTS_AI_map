@@ -1,0 +1,32 @@
+.block{
+    height: 100%;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0;
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+.modal_header{
+    padding: 0 var(--page-padding-744);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header_button{
+    border-radius: 50% !important;
+    background: rgba(255,255,255,0.06) !important;
+}
+
+.placeholder{
+    width: 4.6rem;
+}
+
+.modal_name{
+    font-weight: 600;
+    color: #FFFFFF;
+}

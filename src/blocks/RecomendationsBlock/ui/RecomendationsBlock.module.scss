@@ -1,0 +1,26 @@
+.block{
+    width: 100%;
+    padding: 3rem 0;
+    background: var(--bg-island);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.heading{
+    padding: 0 var(--page-padding-1280);
+}
+
+@media (max-width: 744px){
+    .heading{
+        padding: 0 var(--page-padding-744);
+    }
+
+    .block{
+        gap: 1.6rem;
+    }
+}
+
+
+

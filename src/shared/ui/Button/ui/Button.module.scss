@@ -1,0 +1,199 @@
+@import "shared/styles/variables.scss";
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 5rem;
+    padding: 0 2.2rem;
+    border-radius: var(--default_border_radius);
+    width: fit-content;
+    border: none;
+    font-size: var(--input_font_size);
+    font-style: normal;
+    font-weight: 600;
+    transition: 300ms;
+
+    &.light{
+        &.disabled{
+            background: rgba(67, 88, 117, 0.05) !important;
+            color: #8E9EB5 !important;
+            border: none !important;
+        }
+        
+        &.iconOnly{
+            padding: 0;
+            width: 4.6rem;
+            min-width: 4.6rem;
+            height: 4.6rem;
+        }
+        
+        &.ghost{
+            background: transparent;
+            color: var(--button-ghost-text);
+            font-weight: 500;
+
+            & .lds_ring div {
+                border: 0.3rem solid var(--button-ghost-text);
+                border-color: var(--button-ghost-text) transparent transparent transparent;
+            }
+
+            &:hover{
+                background: var(--button-ghost-bg-hover);
+            }
+        }
+        
+        &.primary{
+            background: var(--button-primary-light);
+            color: var(--button-primary-light-text);
+
+            & .lds_ring div {
+                border: 0.3rem solid var(--button-primary-light-text);
+                border-color: var(--button-primary-light-text) transparent transparent transparent;
+            }
+
+            &:hover{
+                background: var(--button-primary-light-hover);
+            }
+        }
+        
+        &.secondary{
+            background: var(--button-secondary-light);
+            color: var(--button-secondary-light-text);
+
+            & .lds_ring div {
+                border: 0.3rem solid var(--button-secondary-light-text);
+                border-color: var(--button-secondary-light-text) transparent transparent transparent;
+            }
+
+            &:hover{
+                background: var(--button-secondary-light-hover);
+            }
+        }
+        
+        &.tetrinary{
+            background: var(--button-tetrinary-light);
+            color: var(--button-tetrinary-light-text);
+
+            & .lds_ring div {
+                border: 0.3rem solid var(--button-tetrinary-light-text);
+                border-color: var(--button-tetrinary-light-text) transparent transparent transparent;
+            }
+
+            &:hover{
+                background: var(--button-tetrinary-light-hover);
+            }
+        }
+        
+        &.dangerous{
+            background: transparent;
+            border: 1px solid var(--error);
+            color: var(--error);
+            transition: 300;
+
+            & .lds_ring div {
+                border: 0.3rem solid var(--error);
+                border-color: var(--error) transparent transparent transparent;
+            }
+        
+            &:hover{
+                background: var(--error);
+                color: #ffffff;
+            }
+        }
+    }
+
+    &.dark{
+        &.primary{
+            background: var(--button-primary-light);
+            color: var(--button-primary-light-text);
+            
+            & .lds_ring div {
+                border: 0.3rem solid var(--button-primary-light-text);
+                border-color: var(--button-primary-light-text) transparent transparent transparent;
+            }
+
+            &:hover{
+                background: var(--button-primary-light-hover);
+            }
+        }
+        
+        &.secondary{
+            background: var(--button-secondary-dark);
+            color: var(--button-secondary-dark-text);
+            font-weight: 700;
+
+            & .lds_ring div {
+                border: 0.3rem solid var(--button-secondary-dark-text);
+                border-color: var(--button-secondary-dark-text) transparent transparent transparent;
+            }
+
+            &:hover{
+                background: var(--button-secondary-dark-hover);
+            }
+        }
+    }
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+.big{
+    height: 5.4rem;
+    padding: 0 6.4rem;
+}
+
+.small{
+    height: auto;
+    padding: 0.8rem 1.6rem;
+}
+
+@media screen and (max-width: 500px) {
+    .big{
+        padding: 18px;
+    }
+}
+
+
+.lds_ring,
+.lds_ring div {
+  box-sizing: border-box;
+}
+.lds_ring {
+  display: inline-block;
+  position: relative;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.lds_ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 0.3rem solid #FFFFFF;
+  border-radius: 50%;
+  animation: lds_ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #FFFFFF transparent transparent transparent;
+}
+
+.lds_ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds_ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds_ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds_ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

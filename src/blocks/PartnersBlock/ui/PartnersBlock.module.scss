@@ -1,0 +1,32 @@
+.prtnrs{
+    display: flex;
+    width: 100%;
+    padding: 0 var(--page-padding-1280);
+    flex-direction: column;
+    gap: 4rem
+}
+
+.list{
+    display: flex;
+    gap: 6rem;
+}
+
+.logo{
+    height: 11rem;
+    width: auto;
+}
+
+@media (max-width: 744px){
+    .prtnrs{
+        display: flex;
+        width: 100%;
+        padding: 0 var(--page-padding-744);
+        flex-direction: column;
+        gap: 3.6rem
+    }
+
+    .logo{
+        height: auto;
+        width: 6.4rem;
+    }
+}

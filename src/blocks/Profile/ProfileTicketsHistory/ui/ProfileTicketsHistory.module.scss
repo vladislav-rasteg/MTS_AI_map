@@ -1,0 +1,25 @@
+.block{
+    padding: 0rem var(--page-padding-1280) 4rem var(--page-padding-1280);
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+
+.tickets_grid{
+    display: grid;
+    width: 100%;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 744px){
+    .block{
+        padding: 0rem var(--page-padding-744) 2.2rem var(--page-padding-744);
+    }
+
+    .tickets_grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

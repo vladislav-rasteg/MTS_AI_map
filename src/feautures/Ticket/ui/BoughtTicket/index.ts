@@ -1,0 +1,1 @@
+export { BoughtTicket } from "./ui/BoughtTicket"

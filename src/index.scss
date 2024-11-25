@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../font/SF-Pro-Display-Ultralight.otf") format("opentype")
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../font/SF-Pro-Display-Thin.otf") format("opentype")
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../font/SF-Pro-Display-Light.otf") format("opentype")
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/SF-Pro-Display-Regular.otf") format("opentype")
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/SF-Pro-Display-Medium.otf") format("opentype")
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../font/SF-Pro-Display-Semibold.otf") format("opentype")
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/SF-Pro-Display-Bold.otf") format("opentype")
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../font/SF-Pro-Display-Heavy.otf") format("opentype")
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../font/SF-Pro-Display-Black.otf") format("opentype")
+}
+
+
+
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: var(--bg-primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
+  margin: 0;
+  display: flex;
+}
+
+@media (min-width: 1440px){
+  html{
+      font-size: calc(100dvw / 1920 * 10);
+  }
+}
+
+@media (max-width: 1439px){
+  html{
+      font-size: calc(100dvw / 1440 * 10);
+  }
+}
+
+@media (max-width: 1280px){
+  html{
+      font-size: calc(100dvw / 1280 * 10);
+  }
+}
+
+@media (max-width: 1024px){
+  html{
+      font-size: calc(100dvw / 1024 * 10);
+  }
+}
+
+@media (max-width: 744px){
+  html{
+      font-size: calc(100dvw / 360 * 10);
+  }
+}
+
+
+svg {
+  background-color: #F2F3F7;
+  border: 1px solid #ddd;
+}
+
+circle {
+  transition: transform 0.3s;
+  z-index: 4;
+}
+
+// circle:hover {
+//   transform: scale(1.1);
+//   cursor: pointer;
+// }
+
+text {
+  font-family: Arial, sans-serif;
+  pointer-events: none;
+  z-index: 5;
+}
+
+line {
+  z-index: 3;
+}

@@ -1,0 +1,160 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20rem;
+    min-width: 20rem;
+    cursor: pointer;
+
+    & img{
+        transition: 500ms;
+        pointer-events: none;
+    }
+
+    &:hover{
+        & img{
+            transform: scale(1.03);
+        }
+    }
+
+    &.medium{
+        width: 28rem;
+    }
+}
+
+.card_image{
+    position: relative;
+    display: flex;
+    width: 100%;
+    aspect-ratio: 10/14;
+    border-radius: 2.4rem;
+    overflow: hidden;
+}
+
+.place{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.wishlist{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(20px);
+    z-index: 5;
+    transition: 300ms;
+
+    @media (hover: hover) {
+        &:hover{
+            background: rgba(255,255,255,0.25);
+            transform: scale(1.1);
+        }
+    }
+
+    &.active{
+        background: rgba(255,255,255,1);
+
+        @media (hover: hover) {
+            &:hover{
+                background: rgba(255,255,255,1);
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.age_tag{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-weight: 500;
+    z-index: 5;
+    padding: 0.2rem 0.8rem;
+    border-radius: 1rem;
+    background: rgba(0,0,0,0.15);
+    color: #FFFFFF;
+    backdrop-filter: blur(20px);
+}
+
+
+.medium .card_image{
+    display: flex;
+    width: 100%;
+    aspect-ratio: 10/6.4;
+    border-radius: 2.4rem;
+    overflow: hidden;
+}
+
+.info_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info_row{
+    display: flex;
+    gap: 1rem;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.name{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 600;
+}
+
+.main_price{
+    background: var(--brand);
+    padding: 0.8rem 1.6rem;
+    width: fit-content;
+    border-radius: 2.4rem;
+}
+
+.price{
+    font-weight: 600;
+    color: #000000;
+}
+
+.line{
+    width: 100%;
+    height: 2.4rem;
+}
+
+.price_line{
+    width: 10rem;
+    height: 4rem;
+}
+
+@media (max-width: 744px){
+    .card{
+        width: 15.4rem;
+        min-width: 15.4rem;
+
+        &.medium{
+            width: 22rem;
+        }
+    }
+
+
+}

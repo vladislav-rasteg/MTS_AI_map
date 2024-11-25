@@ -1,0 +1,26 @@
+.non_authorized_layout{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.authorized_layout{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100dvh;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 8.8rem;
+}
+
+.city_layout{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}

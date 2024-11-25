@@ -1,0 +1,41 @@
+.block{
+    width: 100%;
+    background: var(--bg-primary);
+    padding: 1.2rem 1.6rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info{
+    display: flex;
+    gap: 1.2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.logo{
+    width: 5rem;
+    min-width: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.name{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.button{
+    border-radius: 50%;
+    background: var(--bg-island) !important;
+    aspect-ratio: 1/1;
+}
+
+.icon{
+    fill: var(--icon-primary);
+}

@@ -1,0 +1,132 @@
+.ticket{
+    position: relative;
+    overflow: hidden;
+    border-radius: 2.2rem;
+    cursor: pointer;
+}
+
+.card_content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    gap: 1.6rem;
+    z-index: 4;
+    flex-direction: column;
+    padding: 2.2rem;
+    background: rgba(0,0,0,0.3);
+}
+
+.bg_image{
+    position: absolute;
+    transform: scale(1.1);
+    // left: -2rem;
+    top: -1rem;
+    flex-grow: 1;
+    filter: blur(4rem);
+    -webkit-filter: blur(4rem);
+    -moz-filter: blur(4rem);
+    -o-filter: blur(4rem);
+    -ms-filter: blur(4rem);
+    z-index: 2;
+}
+
+.status_icon{
+    position: absolute;
+    z-index: 6;
+    bottom: 2.2rem;
+    right: 2.2rem;
+}
+
+.top_row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.tag{
+    position: relative;
+    z-index: 4;
+    padding: 0.4rem 2.4rem;
+    border-radius: 2.2rem;
+    background: rgba(255,255,255,0.2);
+}
+
+.place{
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.event_name{
+    font-weight: 500;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.info{
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info_row{
+    display: flex;
+    gap: 1rem;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.lds_ring,
+.lds_ring div {
+  box-sizing: border-box;
+}
+.lds_ring {
+  display: inline-block;
+  position: relative;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.lds_ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 0.3rem solid #FFFFFF;
+  border-radius: 50%;
+  animation: lds_ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #FFFFFF transparent transparent transparent;
+}
+
+.lds_ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds_ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds_ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds_ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

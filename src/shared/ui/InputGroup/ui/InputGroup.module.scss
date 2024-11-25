@@ -1,0 +1,19 @@
+@import "shared/styles/variables.scss";
+
+.input_group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &.s{
+        gap: var(--small_gap);
+    }
+
+    &.m{
+        gap: var(--medium_gap);
+    }
+
+    &.l{
+        gap: var(--large_gap);
+    }
+}

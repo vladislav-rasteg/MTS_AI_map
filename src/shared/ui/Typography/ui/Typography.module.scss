@@ -1,0 +1,119 @@
+@font-face {
+	font-family: 'DrukWideCyr-Bold';
+	src: url('./fonts/drukwidecyr-bold.eot');
+	src: url('./fonts/drukwidecyr-bold.woff2') format('woff2'),
+		url('./fonts/drukwidecyr-bold.woff') format('woff'),
+		url('./fonts/drukwidecyr-bold.ttf') format('truetype'),
+}
+
+.typography{
+    font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
+}
+
+.wide{
+    font-family: 'DrukWideCyr-Bold';
+    letter-spacing: 0.2rem;
+    font-weight: 400 !important;
+}
+
+.h1{
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+}
+
+.h2{
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 500;
+}
+
+.h3{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.p1{
+    font-size: 2.4rem;
+}
+
+.p2{
+    font-size: 2rem;
+}
+
+.p3{
+    font-size: 1.8rem;
+}
+
+.p4{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.light{
+    &.primary{
+        color: #1A1A1A;
+    }
+
+    &.secondary{
+        color: #4D4D4D;
+    }
+
+    &.tetrinary{
+        color: #808080;
+    }
+
+    &.invert{
+        color: #FFFFFF;
+    }
+}
+
+.primary{
+    color: var(--text-primary);
+}
+
+.secondary{
+    color: var(--text-secondary);
+}
+
+.tetrinary{
+    color: var(--text-tetrinary);
+}
+
+.invert{
+    color: var(--text-invert);
+}
+
+
+@media (max-width: 744px){
+    .h1{
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+    }
+    
+    .h2{
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        font-weight: 500;
+    }
+    
+    .h3{
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    
+    .p1{
+        font-size: 1.6rem;
+    }
+    
+    .p2{
+        font-size: 2rem;
+    }
+    
+    .p3{
+        font-size: 1.6rem;
+    }
+    
+    .p4{
+        font-size: 1.4rem;
+    }
+}
